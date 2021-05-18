@@ -1,19 +1,14 @@
-const fs = require('fs');
-
+const { createFile1, createFile2 } = require('./helpers/multiplicar');
 console.clear();
-console.log('===============');
-console.log('Tabla del:  5');
-console.log('===============');
 
-const base = 5;
-let out = '';
+//const base1 = 4;
+  
+// Argumentos desde la consola.
+const [,,arg3 = 'base=1'] = process.argv;
+const [, base] = arg3.split('=');
+console.log(base);
 
-for (let i = 1; i <=10; i++) {
-    out += `${ base } x ${ i } = ${ base * i }\n`;
-}
-
-console.log(out);
-
-// Grabar archivo.
-//fs.writeFile()
-
+createFile2(base)
+    .then(nameFile => console.log(nameFile, 'creado'))
+    .catch(err => console.log(err));
+  
