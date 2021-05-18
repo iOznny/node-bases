@@ -15,5 +15,9 @@ for (let i = 1; i <=10; i++) {
 console.log(out);
 
 // Grabar archivo.
-//fs.writeFile()
+fs.writeFile(`tabla-${ base }.txt`, out, (err) => {
+    if (err) throw err;
+
+    console.log(`tabla-${ base }.txt creada.`);
+});
 
