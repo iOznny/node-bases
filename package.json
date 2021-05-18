@@ -1,0 +1,23 @@
+{
+  "name": "bases",
+  "version": "0.0.1",
+  "description": "Tablas de Multiplicar en archivos de texto.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iOznny/node-bases.git"
+  },
+  "author": "Cesar Candia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iOznny/node-bases/issues"
+  },
+  "homepage": "https://github.com/iOznny/node-bases#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {}
+}
