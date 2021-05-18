@@ -1,6 +1,6 @@
 {
   "name": "bases",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tablas de Multiplicar en archivos de texto.",
   "main": "app.js",
   "scripts": {
@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/iOznny/node-bases#readme",
   "dependencies": {
-    "colors": "^1.4.0"
+    "colors": "^1.4.0",
+    "yargs": "^17.0.1"
   },
   "devDependencies": {}
 }
