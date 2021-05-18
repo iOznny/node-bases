@@ -19,7 +19,7 @@ const createFile1 = (base = 1, t = 10, l = false) => {
         }
     
         // Grabar archivo.
-        fs.writeFile(`tabla-${ base }.txt`, out, (err) => {
+        fs.writeFile(`./outs/tabla-${ base }.txt`, out, (err) => {
             if (err) throw err;
         });
     });
@@ -42,7 +42,7 @@ const createFile2 = async(base = 1, t = 10, l = false) => {
             console.log(consola);
         }
 
-        fs.writeFileSync(`tabla-${ base }.txt`, out);        
+        fs.writeFileSync(`./outs/tabla-${ base }.txt`, out);        
         return `tabla-${ base }.txt`;
     } catch (err) {
         throw err;
