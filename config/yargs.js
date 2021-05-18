@@ -1,15 +1,21 @@
 const argv = require('yargs')
     .options('b', {
         alias: 'base',
-        describe: 'Es la base de la tabla de multiplicar',
         type: 'number',
-        demandOption: true
+        demandOption: true,
+        describe: 'Es la base de la tabla de multiplicar'
+    })
+    .options('t', {
+        alias: 'tope',
+        type: 'number',
+        default: 10,
+        describe: 'Limite de hasta donde debe multiplicar'
     })
     .options('l', {
         alias: 'listar',
-        describe: 'Muestra la tabla de multiplicar en consola',
         type: 'boolean',
-        default: false
+        default: false,
+        describe: 'Muestra la tabla de multiplicar en consola'
     })
     .check((argv, options) => {
         console.log('Yargs', argv);
