@@ -6,6 +6,7 @@ console.clear();
 // Argumentos desde la consola.
 const [,,arg3 = 'base=1'] = process.argv;
 const [, base] = arg3.split('=');
+
 console.log(base);
 
 createFile2(base)
